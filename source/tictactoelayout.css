@@ -18,8 +18,90 @@
 
 }
 .gridItemContainer {
-    position: relative;
-    padding-top: 100%; /* added */
-    border: 1px solid;
-    background: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 5px;
+}
+.one {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+.two {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: darkred;
+}
+
+.three {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 3 / span 1;
+    background: green;
+}
+
+.four {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+
+.five {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+
+.six {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+
+.seven {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+.eight{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+.nine{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+.item {
+    background: black;
+    display: inline-block;
+    border: 5px solid black;
 }
