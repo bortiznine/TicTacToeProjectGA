@@ -13,6 +13,7 @@ body{
 }
 
 .gridItemContainer {
+
 text-align: center;
     justify-content: center;
     display: grid;
@@ -20,16 +21,29 @@ text-align: center;
     grid-template-rows: repeat(3, 200px);
     grid-gap: 5px;
 }
+/*Squares*/
 .item_one {
+
     display: inline-block;
    border: 5px solid black;
   padding: 80px;
 
 }
+/*Mouse over events*/
+.item_one:hover{
+
+ background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
 .item_two {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
+}
+.item_two:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
 .item_three {
@@ -38,10 +52,20 @@ text-align: center;
     padding: 80px;
 }
 
+.item_three:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
 .item_four {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
+}
+.item_four:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
 .item_five {
@@ -49,11 +73,21 @@ text-align: center;
     border: 5px solid black;
     padding: 80px;
 }
+.item_five:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
 
 .item_six {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
+}
+.item_six:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
 .item_seven {
@@ -61,15 +95,30 @@ text-align: center;
     border: 5px solid black;
     padding: 80px;
 }
+.item_seven:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
 .item_eight{
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
+.item_eight:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
 .item_nine{
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
+}
+.item_nine:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 /*.item {*/
 /*    !*background: black;*!*/
