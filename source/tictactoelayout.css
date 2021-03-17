@@ -12,8 +12,8 @@ body{
     height: 100%;
 }
 
-.gridItemContainer {
-
+#gridItemContainer {
+background-color: silver;
 text-align: center;
     justify-content: center;
     display: grid;
@@ -22,7 +22,7 @@ text-align: center;
     grid-gap: 5px;
 }
 /*Squares*/
-.item_one {
+#item_one {
 
     display: inline-block;
    border: 5px solid black;
@@ -30,92 +30,92 @@ text-align: center;
 
 }
 /*Mouse over events*/
-.item_one:hover{
+#item_one:hover{
 
  background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
-.item_two {
+#item_two {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_two:hover{
+#item_two:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
-.item_three {
+#item_three {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
 
-.item_three:hover{
+#item_three:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
-.item_four {
+#item_four {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_four:hover{
-
-    background-size: cover;
-    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
-}
-
-.item_five {
-    display: inline-block;
-    border: 5px solid black;
-    padding: 80px;
-}
-.item_five:hover{
+#item_four:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
-.item_six {
+#item_five {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_six:hover{
+#item_five:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
 
-.item_seven {
+#item_six {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_seven:hover{
+#item_six:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
-.item_eight{
+
+#item_seven {
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_eight:hover{
+#item_seven:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
 }
-.item_nine{
+#item_eight{
     display: inline-block;
     border: 5px solid black;
     padding: 80px;
 }
-.item_nine:hover{
+#item_eight:hover{
+
+    background-size: cover;
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
+}
+#item_nine{
+    display: inline-block;
+    border: 5px solid black;
+    padding: 80px;
+}
+#item_nine:hover{
 
     background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg");
