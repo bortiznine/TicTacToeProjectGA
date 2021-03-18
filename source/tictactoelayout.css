@@ -15,6 +15,7 @@ body{
 #gridItemContainer {
 background-color: #ffffff;
 text-align: center;
+    font-size: 40px;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 200px);
