@@ -69,6 +69,12 @@ function checkForWin() {
             alert('winner in the diagonals 3,5,7 ' + turn)
         }
     }
+    if(moves[0] !=null && moves[1] !=null && moves[2] !=null && moves[3] !=null && moves[4] !=null && moves[5] != null && moves[6] !=null && moves[7] !=null && moves[8] !=null  ) {
+            removeClickEventCallback()
+            alert('Nobody wins ')
+
+    }
+
     else {
         console.log('no winner yet')
     }
@@ -92,6 +98,7 @@ function handleClickEventCallback(event) {
      if(turn==="O"){
         event.target.setAttribute('style','background-color:lightblue')
     }
+
     else {
     console.log(moves)
      event.target.setAttribute('style', 'background-color:red')
