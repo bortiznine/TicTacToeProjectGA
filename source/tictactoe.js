@@ -1,9 +1,5 @@
 //Write variables for player 1/2
 
-//write functions to hold data
-
-
-
 
 const moves = new Array(9)
 
@@ -12,10 +8,48 @@ let turnCount = 0
 let turn = 'X'
 
 function checkForWin() {
+    //NEED TO FIX IF FORMATS
+        //checks 1,2,3
     if (moves[0] === moves[1] && moves[1] === moves[2]) {
         removeClickEventCallback()
         alert('winner in the first row ' + turn)
-    } else {
+    }
+        //checks 4,5,6
+   else if(moves[3] === moves[4] && moves[4] === moves[5] ){
+        removeClickEventCallback()
+        alert('winner in the second row ' + turn)
+   }
+        //checks 7,8,9
+    else if(moves[6] === moves[7] && moves[7] === moves[8]){
+        removeClickEventCallback()
+        alert('winner in the third row ' + turn)
+    }
+            //checks 1,4,7
+    else if(moves[0] === moves[3] && moves[3] === moves[6]){
+        removeClickEventCallback()
+        alert('winner in the first column ' + turn)
+    }
+            //checks 2,5,8
+    else if(moves[1] === moves[4] && moves[4] === moves[7]){
+        removeClickEventCallback()
+        alert('winner in the second column' + turn)
+    }
+        //checks 3,6,9
+    else if(moves[2] === moves[5] && moves[5] === moves[8]){
+        removeClickEventCallback()
+        alert('winner in the third column ' + turn)
+    }
+        //checks 1,5,9
+    else if(moves[0] === moves[4] && moves[4] === moves[8]){
+        removeClickEventCallback()
+        alert('winner in the diagonals 1,5,9 ' + turn)
+    }
+        //checks 3,5,7
+    else if(moves[2] === moves[4] && moves[4] === moves[6]){
+        removeClickEventCallback()
+        alert('winner in the diagonals 3,5,7 ' + turn)
+    }
+    else {
         console.log('no winner yet')
     }
 }
@@ -25,17 +59,28 @@ function removeClickEventCallback() {
         square.removeEventListener('click', handleClickEventCallback)
     )
 }
-
+//write functions to hold data
 function handleClickEventCallback(event) {
+    //if (turnCount < 1) {squares.classList.add('rotate')}
     moves[event.target.id] = turn
     checkForWin()
     event.target.innerText = turn
     turn = (turnCount % 2 === 0) ? "O" : "X";
-    turnCount++
+
+    //NEED To set up if statements for X and O
+
+    // if(turn=true){
+    //     event.target.setAttribute('style','background-color:blue')
+    // }
+    // else {
+     event.target.setAttribute('style', 'background-color:red')
+    // }
+        turnCount++
+
 }
 
-squares.forEach((square, index) => {
-    square.setAttribute('id', `${index}`)
+squares.forEach((square,index) => {
+    // square.setAttribute('id', `${index}`)
     square.addEventListener('click', handleClickEventCallback, {once: true})
 })
 
