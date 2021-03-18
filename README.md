@@ -19,3 +19,7 @@ AS of 3/18/21
 
 Completed project with mouse hover effect borders win and loss conditions.
 Also contains reset load button!
+
+WANNA PLAY THE GAME?
+Here it is:
+https://bortiznine.github.io/TicTacToeProjectGA/source/
