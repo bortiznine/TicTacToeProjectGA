@@ -13,7 +13,7 @@ body{
 }
 
 #gridItemContainer {
-background-color: silver;
+background-color: #ffffff;
 text-align: center;
     justify-content: center;
     display: grid;
