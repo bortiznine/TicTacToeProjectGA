@@ -27,10 +27,10 @@ text-align: center;
     font-size: 40px;
     justify-content: center;
     display: grid;
-    border: 5px solid black;
+    border: 5px solid #000000;
     padding: 80px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(3, 125px);
     grid-gap: 5px;
 
 }
@@ -42,8 +42,14 @@ text-align: center;
 /*div:hover{*/
 /*    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")*/
 /*}*/
+#gridItemContainer>div{
+    text-align-all: center;
+    justify-content: inherit;
+       border: 2px solid black;
 
-.square:hover{
+}
+#gridItemContainer>div:hover{
+    background-size: cover;
     background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")
 }
 
