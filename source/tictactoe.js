@@ -2,7 +2,7 @@
 
 
 const moves = new Array(9)
-
+const resetButton= document.querySelector('.RESET')
 const squares = document.querySelectorAll('#gridItemContainer > div')
 let turnCount = 0
 let turn = 'X'
@@ -83,6 +83,7 @@ function checkForWin() {
 function removeClickEventCallback() {
     squares.forEach(square =>
         square.removeEventListener('click', handleClickEventCallback)
+
     )
 }
 //write functions to hold data
@@ -113,6 +114,10 @@ squares.forEach((square,index) => {
     square.setAttribute('style', 'background-color: gray')
 })
 
+resetButton.addEventListener('click',(event)=>{
+    location.reload()
+
+})
 
 
 // squares.forEach( square=>
