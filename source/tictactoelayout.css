@@ -1,6 +1,15 @@
-h2{
 
+h1.headertekst {
+    text-align: center;
+    font-family: 'Staatliches', SansSerif ;
     color: hotpink;
+
+}
+h2.rules{
+    text-align: center;
+    font-family: 'Staatliches', SansSerif ;
+    color: #1d25e5;
+
 }
 body{
 
@@ -20,9 +29,22 @@ text-align: center;
     display: grid;
     border: 5px solid black;
     padding: 80px;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
     grid-gap: 5px;
+
+}
+/*#gridItemContainer.div:hover{*/
+/*    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")*/
+/*}*/
+
+
+/*div:hover{*/
+/*    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")*/
+/*}*/
+
+.square:hover{
+    background-image: url("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")
 }
 
 /*Squares*/
