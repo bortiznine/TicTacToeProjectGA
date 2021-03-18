@@ -10,44 +10,64 @@ let turn = 'X'
 function checkForWin() {
     //NEED TO FIX IF FORMATS
         //checks 1,2,3
-    if (moves[0] === moves[1] && moves[1] === moves[2]) {
-        removeClickEventCallback()
-        alert('winner in the first row ' + turn)
+    if(moves[0] !=null && moves[1] !=null && moves[2] != null) {
+        if (moves[0] === moves[1] && moves[1] === moves[2]) {
+            removeClickEventCallback()
+        console.log((moves))
+            console.log('winner in the first row ' + turn)
+        }
+
+        console.log('whatever')
     }
-        //checks 4,5,6
-   else if(moves[3] === moves[4] && moves[4] === moves[5] ){
-        removeClickEventCallback()
-        alert('winner in the second row ' + turn)
-   }
+
+    //checks 4,5,6
+    else if(moves[3] !=null && moves[4] !=null && moves[5] != null) {
+        if (moves[3] === moves[4] && moves[4] === moves[5]) {
+           removeClickEventCallback()
+           console.log('winner in the second row ' + turn)
+         }
+     }
         //checks 7,8,9
-    else if(moves[6] === moves[7] && moves[7] === moves[8]){
-        removeClickEventCallback()
-        alert('winner in the third row ' + turn)
+    if(moves[6] !=null && moves[7] !=null && moves[8] != null) {
+        if (moves[6] === moves[7] && moves[7] === moves[8]) {
+            // removeClickEventCallback()
+            console.log('winner in the third row ' + turn)
+        }
     }
             //checks 1,4,7
-    else if(moves[0] === moves[3] && moves[3] === moves[6]){
-        removeClickEventCallback()
-        alert('winner in the first column ' + turn)
+    if(moves[0] !=null && moves[3] !=null && moves[6] != null) {
+        if (moves[0] === moves[3] && moves[3] === moves[6]) {
+            //removeClickEventCallback()
+            console.log('winner in the first column ' + turn)
+        }
     }
             //checks 2,5,8
-    else if(moves[1] === moves[4] && moves[4] === moves[7]){
-        removeClickEventCallback()
-        alert('winner in the second column' + turn)
+    if(moves[1] !=null && moves[4] !=null && moves[7] != null) {
+        if (moves[1] === moves[4] && moves[4] === moves[7]) {
+            //removeClickEventCallback()
+            console.log('winner in the second column ' + turn)
+        }
     }
         //checks 3,6,9
-    else if(moves[2] === moves[5] && moves[5] === moves[8]){
-        removeClickEventCallback()
-        alert('winner in the third column ' + turn)
+    if(moves[2] !=null && moves[5] !=null && moves[8] != null) {
+        if (moves[2] === moves[5] && moves[5] === moves[8]) {
+            //removeClickEventCallback()
+            console.log('winner in the third column ' + turn)
+        }
     }
         //checks 1,5,9
-    else if(moves[0] === moves[4] && moves[4] === moves[8]){
-        removeClickEventCallback()
-        alert('winner in the diagonals 1,5,9 ' + turn)
+    if(moves[0] !=null && moves[4] !=null && moves[8] != null) {
+        if (moves[0] === moves[4] && moves[4] === moves[8]) {
+            //removeClickEventCallback()
+            console.log('winner in the diagonals 1,5,9 ' + turn)
+        }
     }
         //checks 3,5,7
-    else if(moves[2] === moves[4] && moves[4] === moves[6]){
-        removeClickEventCallback()
-        alert('winner in the diagonals 3,5,7 ' + turn)
+    if(moves[2] !=null && moves[4] !=null && moves[6] != null) {
+        if (moves[2] === moves[4] && moves[4] === moves[6]) {
+            //removeClickEventCallback()
+            console.log('winner in the diagonals 3,5,7 ' + turn)
+        }
     }
     else {
         console.log('no winner yet')
@@ -73,6 +93,7 @@ function handleClickEventCallback(event) {
     //     event.target.setAttribute('style','background-color:blue')
     // }
     // else {
+    console.log(moves)
      event.target.setAttribute('style', 'background-color:red')
     // }
         turnCount++
@@ -80,7 +101,7 @@ function handleClickEventCallback(event) {
 }
 
 squares.forEach((square,index) => {
-    // square.setAttribute('id', `${index}`)
+    square.setAttribute('id', `${index}`)
     square.addEventListener('click', handleClickEventCallback, {once: true})
 })
 
