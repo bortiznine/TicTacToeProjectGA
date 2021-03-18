@@ -30,42 +30,42 @@ function checkForWin() {
         //checks 7,8,9
     if(moves[6] !=null && moves[7] !=null && moves[8] != null) {
         if (moves[6] === moves[7] && moves[7] === moves[8]) {
-            // removeClickEventCallback()
+             removeClickEventCallback()
             console.log('winner in the third row ' + turn)
         }
     }
             //checks 1,4,7
     if(moves[0] !=null && moves[3] !=null && moves[6] != null) {
         if (moves[0] === moves[3] && moves[3] === moves[6]) {
-            //removeClickEventCallback()
+            removeClickEventCallback()
             console.log('winner in the first column ' + turn)
         }
     }
             //checks 2,5,8
     if(moves[1] !=null && moves[4] !=null && moves[7] != null) {
         if (moves[1] === moves[4] && moves[4] === moves[7]) {
-            //removeClickEventCallback()
+            removeClickEventCallback()
             console.log('winner in the second column ' + turn)
         }
     }
         //checks 3,6,9
     if(moves[2] !=null && moves[5] !=null && moves[8] != null) {
         if (moves[2] === moves[5] && moves[5] === moves[8]) {
-            //removeClickEventCallback()
+            removeClickEventCallback()
             console.log('winner in the third column ' + turn)
         }
     }
         //checks 1,5,9
     if(moves[0] !=null && moves[4] !=null && moves[8] != null) {
         if (moves[0] === moves[4] && moves[4] === moves[8]) {
-            //removeClickEventCallback()
+            removeClickEventCallback()
             console.log('winner in the diagonals 1,5,9 ' + turn)
         }
     }
         //checks 3,5,7
     if(moves[2] !=null && moves[4] !=null && moves[6] != null) {
         if (moves[2] === moves[4] && moves[4] === moves[6]) {
-            //removeClickEventCallback()
+            removeClickEventCallback()
             console.log('winner in the diagonals 3,5,7 ' + turn)
         }
     }
@@ -89,13 +89,13 @@ function handleClickEventCallback(event) {
 
     //NEED To set up if statements for X and O
 
-    // if(turn=true){
-    //     event.target.setAttribute('style','background-color:blue')
-    // }
-    // else {
+     if(turn==="O"){
+        event.target.setAttribute('style','background-color:lightblue')
+    }
+    else {
     console.log(moves)
      event.target.setAttribute('style', 'background-color:red')
-    // }
+    }
         turnCount++
 
 }
