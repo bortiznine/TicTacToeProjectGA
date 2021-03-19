@@ -1,4 +1,4 @@
-A Tic Tac Toe game using JS, CSS, HTML
+<h1>A Tic Tac Toe game using JS, CSS, HTML</h1>
 
 The intent is to have two people play based on two varuables that differ dependent on the player (ex. player 1 is X and player 2 is O)
 
@@ -9,6 +9,7 @@ Have the two players have protocols to follow regarding make the game fair. (no 
 Manipulate the dom to display alert for winner and any changes within gameplay.
 
 After basic structure is set up and functions work. make the front end user look more appealing( pictures fancy title etc.
+
 
 ![alt text](https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg)
 
