@@ -11,10 +11,11 @@
 
 <li>After basic structure is set up and functions work. make the front end user look more appealing( pictures fancy title etc.</li>
 </ul>
-
+<h2> Mouse Hover effect</h2>
+<p>So basically I wanted to make sure it was both visually appealing but mobilizing as well. So I made it an objective to have a hover display that shows the image below to present which square to slect for your turn choice. Little did I know playing it on a mobile device made it feel even better, as you could play relevatively easy on any mobile platform or device.</p>
 ![alt text](https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg)
 
-BONUS* Set a reset button
+<h3>BONUS* Set a reset button</h3>
 
 AS of 3/18/21
 
