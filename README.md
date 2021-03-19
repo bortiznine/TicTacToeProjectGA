@@ -10,6 +10,8 @@ Manipulate the dom to display alert for winner and any changes within gameplay.
 
 After basic structure is set up and functions work. make the front end user look more appealing( pictures fancy title etc.
 
+![alt text]("https://pbs.twimg.com/profile_images/700841686365175809/j85laibY.jpg")
+
 BONUS* Set a reset button
 
 AS of 3/18/21
